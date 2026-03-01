@@ -17,10 +17,10 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/tenders", label: "My Tenders", icon: FileText },
-  { href: "/knowledge-base", label: "Knowledge Base", icon: BookOpen },
-  { href: "/analytics", label: "Analytics", icon: BarChart3 },
-  { href: "/settings", label: "Settings", icon: Settings },
+  { href: "/dashboard/tenders", label: "My Tenders", icon: FileText },
+  { href: "/dashboard/knowledge-base", label: "Knowledge Base", icon: BookOpen },
+  { href: "/dashboard/analytics", label: "Analytics", icon: BarChart3 },
+  { href: "/dashboard/settings", label: "Settings", icon: Settings },
 ];
 
 export default function DashboardLayout({
@@ -101,7 +101,7 @@ export default function DashboardLayout({
               <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-[#c9a84c] rounded-full" />
             </button>
             <Link
-              href="/tenders/new"
+              href="/dashboard/tenders/new"
               className="bg-[#1e3a5f] hover:bg-[#2d5282] text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               + New Tender

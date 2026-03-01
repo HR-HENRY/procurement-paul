@@ -44,7 +44,7 @@ export default function DashboardPage() {
             <p className="text-blue-200">You have 2 tenders with deadlines this week. Let&apos;s get them finished.</p>
           </div>
           <Link
-            href="/tenders/new"
+            href="/dashboard/tenders/new"
             className="bg-[#c9a84c] hover:bg-[#b8963e] text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-colors flex items-center gap-2"
           >
             Start New Tender <ArrowRight className="w-4 h-4" />
@@ -77,7 +77,7 @@ export default function DashboardPage() {
         <div className="lg:col-span-2 bg-white rounded-xl border border-slate-200">
           <div className="p-5 border-b border-slate-100 flex items-center justify-between">
             <h3 className="font-semibold text-[#1e3a5f]">Recent Tenders</h3>
-            <Link href="/tenders" className="text-sm text-[#1e3a5f] hover:underline font-medium">
+            <Link href="/dashboard/tenders" className="text-sm text-[#1e3a5f] hover:underline font-medium">
               View all
             </Link>
           </div>
@@ -90,7 +90,7 @@ export default function DashboardPage() {
               return (
                 <Link
                   key={tender.id}
-                  href={`/tenders/${tender.id}`}
+                  href={`/dashboard/tenders/${tender.id}`}
                   className="flex items-center gap-4 p-4 hover:bg-slate-50 transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center flex-shrink-0">
