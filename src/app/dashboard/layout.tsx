@@ -12,12 +12,18 @@ import {
   ChevronRight,
   Bell,
   User,
+  MessageSquare,
+  Archive,
+  Target,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/dashboard/tenders", label: "My Tenders", icon: FileText },
+  { href: "/dashboard/answers", label: "Answer Library", icon: MessageSquare },
+  { href: "/dashboard/archive", label: "Tender Archive", icon: Archive },
+  { href: "/dashboard/scoring", label: "Quality Scoring", icon: Target },
   { href: "/dashboard/knowledge-base", label: "Knowledge Base", icon: BookOpen },
   { href: "/dashboard/analytics", label: "Analytics", icon: BarChart3 },
   { href: "/dashboard/settings", label: "Settings", icon: Settings },
