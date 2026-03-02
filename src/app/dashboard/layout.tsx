@@ -15,12 +15,14 @@ import {
   MessageSquare,
   Archive,
   Target,
+  Inbox,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/dashboard/tenders", label: "My Tenders", icon: FileText },
+  { href: "/dashboard/opportunities", label: "Opportunities", icon: Inbox },
   { href: "/dashboard/answers", label: "Answer Library", icon: MessageSquare },
   { href: "/dashboard/archive", label: "Tender Archive", icon: Archive },
   { href: "/dashboard/scoring", label: "Quality Scoring", icon: Target },
