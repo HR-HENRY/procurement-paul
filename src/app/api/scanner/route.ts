@@ -118,7 +118,7 @@ async function searchContractsFinder(keywords: string[]): Promise<TenderResult[]
             ? new Date(release.date).toISOString().split("T")[0]
             : "",
           source: "contracts-finder",
-          url: `https://www.contractsfinder.service.gov.uk/Notice/${release?.ocid}`,
+          url: `https://www.contractsfinder.service.gov.uk/Notice/Show/${release?.ocid}`,
           description: description.substring(0, 500),
           matchedKeywords: matched,
           relevanceScore: score,
@@ -154,7 +154,7 @@ async function searchContractsFinder(keywords: string[]): Promise<TenderResult[]
           ? new Date(notice.PublishedDate ?? notice.publishedDate).toISOString().split("T")[0]
           : "",
         source: "contracts-finder",
-        url: `https://www.contractsfinder.service.gov.uk/Notice/${noticeId}`,
+        url: `https://www.contractsfinder.service.gov.uk/Notice/Show/${noticeId}`,
         description: description.substring(0, 500),
         matchedKeywords: matched,
         relevanceScore: score,
